@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="April Backus' developer portfolio: projects, blog, timeline, and contact." />
+  <title>April Backus | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#home" class="logo"></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" aria-label="Toggle dark/light mode">
+          <img src="assets/night-mode.png" alt="Theme toggle icon" width="24" height="24" />
+        </button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page-section active">
+      <div class="hero" aria-label="Intro">
+        <h1>Hi, I'm April 👩‍💻</h1>
+        <p>Creative front-end developer building unique, accessible web experiences.</p>
+        <a href="#projects" class="cta">Explore My Work</a>
+      </div>
+    </section>
+
+    <section id="about" class="page-section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <div class="about-content">
+        <img src="assets/april-photo.jpg" alt="Portrait of April Backus" class="profile-photo" />
+        <p>I’m a self-taught web developer with a background in design and a passion for coding, learning, and creating tools that help others. My journey started with HTML and CSS and grew into full-stack projects with strong accessibility principles.</p>
+      </div>
+      <h3>My Coding Journey</h3>
+      <ul class="timeline">
+        <li><strong>2022:</strong> Started learning HTML & CSS</li>
+        <li><strong>2023:</strong> Built my first portfolio and learned JavaScript</li>
+        <li><strong>2024:</strong> Created accessible, fully responsive web apps</li>
+        <li><strong>2025:</strong> Contributing to open source and building client sites</li>
+      </ul>
+      <h3>GitHub Contribution Graph</h3>
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=aprilbackus" alt="GitHub contribution streak graph" loading="lazy" />
+    </section>
+
+    <section id="projects" class="page-section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="assets/project1.gif" alt="Preview of Project 1" />
+          <h3>Garden Planner</h3>
+          <p>A responsive, accessible planner for seasonal gardening by zone.</p>
+          <a href="https://aprilbackus.github.io/garden-planner/" target="_blank" class="view-project-button">View Project</a>
+          <a href="https://github.com/aprilbackus/garden-planner" target="_blank">View Code</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/project2.gif" alt="Preview of Project 2" />
+          <h3>Mindful Movers</h3>
+          <p>A mental health community app connecting people through shared events.</p>
+          <a href="https://aprilbackus.github.io/mindful-movers/" target="_blank" class="view-project-button">View Project</a>
+          <a href="https://github.com/aprilbackus/mindful-movers" target="_blank">View Code</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="page-section" aria-labelledby="blog-heading">
+      <h2 id="blog-heading">Daily Blog</h2>
+      <article class="blog-post">
+        <h3>June 17, 2025 – Building This Site</h3>
+        <p>Today I integrated an animated SVG logo into my footer and optimized my GitHub activity graph. This project keeps pushing my skills forward!</p>
+      </article>
+    </section>
+
+    <section id="contact" class="page-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <form action="https://formspree.io/f/mexample" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <a href="assets/april_backus_resume.pdf" download class="resume-button">Download Résumé</a>
+    </section>
+  </main>
+
+  <footer>
+    <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Animated logo">
+      <path d="M10,90 C30,10 70,10 90,90" stroke="#0f2218" stroke-width="5" fill="none">
+        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" repeatCount="indefinite" />
+      </path>
+    </svg>
+    <p>&copy; 2025 April Backus. Made with ❤️ and clean code.</p>
+  </footer>
+</body>
+</html>

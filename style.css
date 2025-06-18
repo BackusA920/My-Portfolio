@@ -10,20 +10,38 @@ html {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0d1117;
   color: #f1f5f9;
   transition: background-color 0.3s, color 0.3s;
   min-height: 100vh;
   line-height: 1.6;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #192746; /* Fallback base */
+  z-index: 0;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('./assets/Background1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.25; /* Adjust between 0.1 and 0.4 for transparency */
+  z-index: -1;
+  pointer-events: none;
+}
+
 
 body.dark-mode {
   background-color: #f8fafc;
-  color: #111827;
+  color: #0a1836;
 }
 
 header {
-  background: rgba(15, 23, 42, 0.65);
+  background: rgba(151, 179, 211, 0.781);
   backdrop-filter: blur(10px);
   padding: 0.4rem 1rem;
   display: flex;
@@ -35,16 +53,9 @@ header {
   border-radius: 2rem;
   margin: 0.75rem auto;
   width: fit-content;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5px 16px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.15);
   gap: 1rem;
-}
-
-.logo {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #e2e8f0;
-  text-decoration: none;
 }
 
 nav ul {
@@ -56,13 +67,13 @@ nav ul {
 
 nav a {
   color: #e2e8f0;
+  display: flex; align-items: center;
   text-decoration: none;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 9999px;
   font-weight: 500;
-  transition: background 0.2s, color 0.2s;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.2;
 }
 
@@ -219,10 +230,15 @@ button[type="submit"]:hover,
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  padding: 2rem;
+  padding: 0.3rem 0;
   background: #0f172a;
   color: #e2e8f0;
+  font-size: 0.75rem;
+  z-index: 999;
 }
 
 body.dark-mode input,

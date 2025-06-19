@@ -7,10 +7,13 @@
   <title>April Backus | Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link rel="stylesheet" href="github-calendar.css">
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
 </head>
-<script src="github-calendar.js"></script>
-<script src="script.js"></script>
+
+
+
 <body>
   <header>
     <nav aria-label="Main navigation">
@@ -21,11 +24,8 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button id="theme-toggle" aria-label="Toggle dark/light mode">
-          <img src="assets/night-mode.png" alt="Theme toggle icon" width="24" height="24" />
-        </button></li>
       </ul>
-    </nav>
+    </nav> 
   </header>
 
 
@@ -33,12 +33,58 @@
 
   <main>
     <section id="home" class="page-section active">
+    <section id="home" class="page-section active"></section>
       <div class="hero" aria-label="Intro">
         <h1>Welcome to My Developer Portfolio</h1>
         <p>From first lines of HTML to fully responsive applications, this site reflects my journey as a fullstack developer. It highlights the skills I’ve built, the projects I’ve brought to life, and the continuous learning that fuels my passion for clean, accessible, and thoughtful web experiences.</p>
-
-
+        <br>
+        <p>This portfolio is more than just a showcase of my work, it's a story of growth, persistence, and curiosity. Each section highlights a milestone in my journey, from early experiments to polished projects crafted with attention to detail and a strong emphasis on accessibility.</p>
+        <br>
+        <p>Whether you're here to explore my projects, read my blog updates, or connect for collaboration, I'm excited to share this space with you. Dive into the About section to learn more about me, or check out my Projects to see what I’ve been building.</p>
+        <blockquote class="quote">"The best way to learn is to build — break things, fix them, and grow."</p>
+          <cite>– My Learning Philosophy</cite>
+        </blockquote>
       </div>
+
+      <br>
+      <br>
+      
+    <section class="tech-stack">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>Accessibility (WCAG)</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+        <li>VS Code</li>
+        <li>Photoshop</li>
+        <li>Lightroom</li>
+        <li>Currently Learning JavaScript</li>
+        <li>Currently Learning CSS</li>
+      </ul>
+    </section>
+
+    <br>
+    <br>
+    <section class="highlights">
+      <h2>Highlights</h2>
+      <ul>
+        <li>Completed 150+ hours of hands-on coding through FreeCodeCamp and Udemy</li>
+        <li>Associate of Applied Science in Graphic Design</li>
+        <li>Certified Illustrator cc 2019 Essential training</li>
+        <li>Certified Foundations of drawing</li>
+        <li>Designed and launched multiple themed mini-sites</li>
+        <li>Advocates for mental health through tech and community</li>
+      </ul>
+    </section>
+
+    <br>
+    <br>
+    
+    <div class="github-calendar-box">
+      <h3>My GitHub Contributions</h3>
+    <div class="calendar" aria-label="GitHub contribution graph"></div>
+    </div>
     </section>
 
 

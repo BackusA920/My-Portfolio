@@ -7,7 +7,10 @@
   <title>April Backus | Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+  <link rel="stylesheet" href="github-calendar.css">
 </head>
+<script src="github-calendar.js"></script>
+<script src="script.js"></script>
 <body>
   <header>
     <nav aria-label="Main navigation">
@@ -25,14 +28,29 @@
     </nav>
   </header>
 
+
+  
+
   <main>
     <section id="home" class="page-section active">
       <div class="hero" aria-label="Intro">
-        <h1>Hi, I'm April 👩‍💻</h1>
-        <p>Creative front-end developer building unique, accessible web experiences.</p>
-        <a href="#projects" class="cta">Explore My Work</a>
+        <h1>Welcome to My Developer Portfolio</h1>
+        <p>From first lines of HTML to fully responsive applications, this site reflects my journey as a fullstack developer. It highlights the skills I’ve built, the projects I’ve brought to life, and the continuous learning that fuels my passion for clean, accessible, and thoughtful web experiences.</p>
+
+
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
 
     <section id="about" class="page-section" aria-labelledby="about-heading">
       <h2 id="about-heading">About Me</h2>
@@ -79,22 +97,29 @@
       </article>
     </section>
 
-    <section id="contact" class="page-section" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
-      <form action="https://formspree.io/f/mexample" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+   <section id="contact" class="page-section contact-section">
+  <div class="contact-left">
+    <img src="./assets/your-photo.jpg" alt="April Backus">
+    <p>Let’s connect! I’d love to hear from you.</p>
+  </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+  <div class="contact-right">
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
 
-        <button type="submit">Send Message</button>
-      </form>
-      <a href="assets/april_backus_resume.pdf" download class="resume-button">Download Résumé</a>
-    </section>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit">Send Message</button>
+      <a href="./assets/resume.pdf" class="resume-button" download>Download Résumé</a>
+    </form>
+  </div>
+</section> 
+
   </main>
 
   <footer>

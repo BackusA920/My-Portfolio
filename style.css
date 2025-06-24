@@ -350,6 +350,13 @@ main {
   transition: transform 0.3s;
 }
 
+.page-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #f1f5f9;
+}
+
 .project-card:hover {
   transform: translateY(-5px);
 }

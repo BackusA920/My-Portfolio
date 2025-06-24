@@ -190,7 +190,7 @@ main {
 
 .highlights-button a {
   display: inline-block;
-  background-color: #60a5fa;
+  background-color: #366fb4;
   color: #ffffff;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -262,7 +262,7 @@ main {
 .calendar {
   display: block;
   overflow: hidden;
-  max-height: 400px; /* adjust if you still see white space */
+  max-height: 400px;
   margin: 0 auto;
 }
 
@@ -362,9 +362,29 @@ main {
 .project-card a {
   display: inline-block;
   margin-top: 0.75rem;
-  color: #3b82f6;
+  color: #afc9f3;
   font-weight: 600;
   text-decoration: none;
+}
+
+.button-inline {
+  display: inline-block;
+  width: 48%;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  background-color: #182542;
+  color: #ffffff;
+  border: 2px solid #afc9f3;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-inline:hover {
+  background-color: #22385d;
+  transform: translateY(-2px);
 }
 
 /* Blog Post*/

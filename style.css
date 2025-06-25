@@ -140,7 +140,7 @@ main {
 .quote {
   margin: 2rem auto;
   padding: 1.25rem 1.5rem;
-  background-color: #1e293b;
+  background-color: #263652;
   border-left: 4px solid #60a5fa;
   border-right: 4px solid #60a5fa;
   border-radius: 0.5rem;
@@ -180,7 +180,7 @@ main {
 }
 
 .skills-list li {
-  background-color: #1e293b;
+  background-color: #263652;
   color: #f1f5f9;
   padding: 0.75rem;
   text-align: center;
@@ -344,15 +344,14 @@ main {
   padding: 2rem;
   margin-bottom: 2.5rem;
   border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none; /* ✅ no base glow */
+  transition: none;  /* ✅ no hover transition */
 }
 
 .about-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 25px rgba(60, 130, 246, 0.25);
+  transform: none;
+  box-shadow: none;
 }
-
 
 .about-card h3 {
   display: inline-block;
@@ -407,7 +406,7 @@ main {
 }
 
 .goals-list li {
-  background-color: #152a4d;
+  background-color: #263652;
   color: #f1f5f9;
   padding: 0.75rem 1rem;
   border-radius: 0.75rem;
@@ -543,7 +542,7 @@ main {
 .project-card a {
   display: inline-block;
   margin-top: 0.75rem;
-  color: #afc9f3;
+  color: #ffffff;
   font-weight: 600;
   text-decoration: none;
 }
